@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup environment
+        run: echo "all set"
